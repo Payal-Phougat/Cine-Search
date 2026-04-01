@@ -29,6 +29,8 @@ const getTrendingVideos = () => {
         card.appendChild(title);
         card.appendChild(rating);
 
+
+
         container.appendChild(card);
       });
     })
