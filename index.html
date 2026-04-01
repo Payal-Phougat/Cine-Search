@@ -1,8 +1,28 @@
-<header>
-  <h1>CineSearch</h1>
-  <input type="text" placeholder="Search movies..." />
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cine Search</title>
+  <style>
+    #container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 200px;
+    }
+    img {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
 
-<main>
-  <div id="movies-container"></div>
-</main>
+  <h1>Movie <Search></Search></h1>
+  <div id="container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
