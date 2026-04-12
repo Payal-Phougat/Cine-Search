@@ -2,27 +2,67 @@
 <html lang="en">
 <head>
   <title>Cine Search</title>
+
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
     #container {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
     }
+
     .card {
       border: 1px solid #ccc;
       padding: 10px;
       width: 250px;
+      border-radius: 8px;
     }
+
     img {
       width: 200px;
     }
+
+    button {
+      margin-top: 5px;
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    #controls {
+      margin-bottom: 20px;
+    }
+
   </style>
+
 </head>
+
 <body>
 
-  <h1>Movie <Search></Search></h1>
-  <div id="container"></div>
+<h1>🎬 Cine Search</h1>
 
-  <script src="script.js"></script>
+<div id="controls">
+
+  <input
+    type="text"
+    id="search"
+    placeholder="Search Movies..."
+  />
+
+  <select id="sort">
+    <option value="">Sort By</option>
+    <option value="high">Rating High to Low</option>
+    <option value="low">Rating Low to High</option>
+  </select>
+
+</div>
+
+<div id="container"></div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
