@@ -35,6 +35,16 @@
     #controls {
       margin-bottom: 20px;
     }
+/* dark mode  */
+    .dark {
+    background-color: #121212;
+    color: white;
+    }
+
+    .dark .card {
+    background-color: #1e1e1e;
+    border-color: #333;
+    }
 
   </style>
 
@@ -51,14 +61,17 @@
     id="search"
     placeholder="Search Movies..."
   />
+  
 
   <select id="sort">
     <option value="">Sort By</option>
     <option value="high">Rating High to Low</option>
     <option value="low">Rating Low to High</option>
+    
   </select>
-
+<button id="themeToggle">🌙 Dark Mode</button>
 </div>
+
 
 <div id="container"></div>
 
